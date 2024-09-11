@@ -1,0 +1,31 @@
+.head-img {
+    position: absolute;
+    z-index: -2;
+    background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.087)), url(../assets/pexels-kadiravsarr-24877174.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 70vh;
+
+}
+
+.head-text {
+    min-height: 70vh;
+    color: #F7EEDD;
+}
+
+.container{
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+
+
+    .container ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+

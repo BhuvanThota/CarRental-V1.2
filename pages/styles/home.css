@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff7ed;
+    font-family: Helvetica, Tahoma, Verdana, Arial, sans-serif
+}
+
+
+
+/* Nav Bar  */
+
+.navbar{
+    background-color: #fff7ed;
+    list-style: none;
+    margin: auto;
+    font-weight: bolder;
+    position: fixed;
+    top: 0;
+    padding: 0.5rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 0.5rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.right-navbar ul{
+    list-style: none;
+}
+
+.right-navbar li{
+    display: inline-flex;
+    margin-right: 1rem;
+    font-size: large;
+    font-weight: 600;
+}
+
+.right-navbar a:hover, .right-navbar a:active{
+    color: #008DDA;
+    text-decoration: underline;
+}
+
+main{
+    margin-top: 3.5rem;
+}
+
+
+@media (max-width: 768px){
+    .navbar{
+        position: static;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logo{
+        margin: 0.5rem auto;
+        font-size: 2rem;
+    }
+
+    .right-navbar li{
+        margin-right: 0;
+        margin-left: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    main{
+        margin-top: 0rem;
+    }
+}
+
+/* Ends Nav Bar */
+
+
+
+
+/* Hero Section */
+
+.hero-img{
+    position: absolute;
+    z-index:-2;
+    background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.58)), url(../assets/why-kei-8e2gal_GIE8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    min-height: 90vh;
+}
+
+.hero-text{
+    min-height: 90vh;
+    color: #F7EEDD;
+}
+
+
+/* Hero Section Ends */
+
+
+
+/* Services Section */
+
+.container{
+    margin: 5rem auto;
+    max-width: 90%;
+}
+
+.svg-img{
+    display: inline-block;
+}
+
+/* Services Section Ends */
+
+
+/* Additional Section */
+
+.img-desc-card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.img-desc-card img{
+    display: inline-block;
+    border-radius: 8px 8px 0 0 ;
+}
+
+.desc-text{
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 2rem auto;
+}
+
+@media (min-width: 768px){
+    .img-desc-card{
+        box-shadow: none;
+    }
+
+    .img-desc-card img{
+        display: inline-block;
+        border-radius: 8px;
+        max-width: 350px;
+        height: 300px;
+    }
+}
+
+/* Additional Section Ends */
+
+
+/* Footer */
+
+.footer-links{
+    max-width: 90%;
+}
+
+/* Footer Ends */
