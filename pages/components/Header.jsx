@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import logoimg from "../assets/3d-car.png"
 
 function Header() {
   return (
     <div className='navbar'>
       <Link to="/">
         <h2 className='logo gap-2'>
-        <img src="/pages/assets/3d-car.png" alt="car-logo" width="50px"   />
+        <img src={logoimg} alt="car-logo" width="50px"   />
         CarRental
         </h2>
       </Link>

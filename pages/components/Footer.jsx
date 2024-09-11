@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import logoimg from "../assets/3d-car.png"
+
 function Footer() {
 
     return (
@@ -10,7 +12,7 @@ function Footer() {
                 <div className='footer-links text-left flex flex-col gap-4 '>
                     <Link to="/">
                         <button className='text-3xl font-bold flex gap-2 justify-center items-center  '>
-                            <img src="./pages/assets/3d-car.png" alt="car-logo" width="50px" className='inline-block' />
+                            <img src={logoimg} alt="car-logo" width="50px" className='inline-block' />
                             CarRental
                         </button>
                     </Link>
