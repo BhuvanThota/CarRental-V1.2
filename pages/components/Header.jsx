@@ -7,7 +7,7 @@ function Header() {
     <div className='navbar'>
       <Link to="/">
         <h2 className='logo gap-2'>
-        <img src="./pages/assets/3d-car.png" alt="car-logo" width="50px"   />
+        <img src="/pages/assets/3d-car.png" alt="car-logo" width="50px"   />
         CarRental
         </h2>
       </Link>

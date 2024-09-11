@@ -8,7 +8,7 @@ function Cards() {
 
             <div className='img-desc-card mb-16 rounded-xl pb-3 md:pb-0 max-w-base mx-auto md:max-w-5xl md:flex md:gap-8 '>
                 <div >
-                    <img src="./pages/assets/pexels-pixabay-164634.jpg" alt="Cars-images" />
+                    <img src="/pages/assets/pexels-pixabay-164634.jpg" alt="Cars-images" />
                 </div>
                 <div className='desc-text'>
                     <h4 className='text-xl font-bold md:text-2xl'>Check out all of the Car models!</h4>
@@ -19,7 +19,7 @@ function Cards() {
 
             <div className='img-desc-card mb-16 rounded-xl pb-3 md:pb-0 max-w-base mx-auto md:max-w-5xl md:flex-row-reverse md:flex md:gap-8 '>
                 <div >
-                    <img src="./pages/assets/pexels-shkrabaanthony-7144212.jpg" alt="Cars-images" />
+                    <img src="/pages/assets/pexels-shkrabaanthony-7144212.jpg" alt="Cars-images" />
                 </div>
                 <div className='desc-text'>
                     <h4 className='text-xl font-bold md:text-2xl'>Do you own a car? Generate more than ₹50,000 annually (starting from..) </h4>
