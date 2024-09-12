@@ -20,6 +20,7 @@ function CarDetail() {
         fetchdata();
     }, [params.id]);
 
+    
     return (
         <>
             <Link to="/cars">
