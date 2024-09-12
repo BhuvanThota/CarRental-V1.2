@@ -7,7 +7,7 @@ function Cards() {
 
         <section className='container text-wrap '>
 
-            <div className='img-desc-card mb-16 rounded-xl pb-3 md:pb-0 max-w-base mx-auto md:max-w-5xl md:flex md:gap-8 '>
+            <div className='img-desc-card mb-16 rounded-xl pb-3 md:pb-0 max-w-base mx-auto md:max-w-5xl xl:max-w-7xl md:flex md:gap-8 '>
                 <div >
                     <img src={cardimg1} alt="Cars-images" />
                 </div>
@@ -18,7 +18,7 @@ function Cards() {
                 </div>
             </div>
 
-            <div className='img-desc-card mb-16 rounded-xl pb-3 md:pb-0 max-w-base mx-auto md:max-w-5xl md:flex-row-reverse md:flex md:gap-8 '>
+            <div className='img-desc-card mb-16 rounded-xl pb-3 md:pb-0 max-w-base mx-auto md:max-w-5xl xl:max-w-7xl md:flex-row-reverse md:flex md:gap-8 '>
                 <div >
                     <img src={cardimg2} alt="Cars-images" />
                 </div>

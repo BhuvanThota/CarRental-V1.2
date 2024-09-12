@@ -11,7 +11,7 @@ function About() {
         <main>
             <section  >
                 <div className='head-img' ></div>
-                <div className="head-text text-center md:text-left text-wrap mx-auto max-w-lg md:h-full lg:max-w-3xl pt-16">
+                <div className="head-text text-center md:text-left text-wrap  my-0 mx-auto max-w-lg lg:max-w-3xl pt-16">
                     <h1 className=' md:text-5xl my-3 text-4xl font-bold font-serif md:pt-16 pt-8 '>About Us</h1>
                 </div>
             </section>

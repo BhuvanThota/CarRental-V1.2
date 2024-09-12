@@ -157,6 +157,50 @@ main{
 /* Additional Section Ends */
 
 
+
+/* Cars Section */
+
+.cars-container{
+    width: 90%;
+    margin: 5rem auto;
+}
+
+.car-img{
+    max-width: 400px;
+    
+}
+
+.car-item:hover, .car-item:active{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.sedan{
+    background-color: #042772;
+    color:#fff7ed
+}
+
+.suv{
+    background-color: rgb(255, 143, 6);
+}
+
+.luxury{
+    background-color: rgb(255, 149, 0);
+    color:rgb(43, 42, 42);
+}
+
+.convertible{
+    background-color: rgb(59, 60, 69);
+    color:#eeeeee
+}
+
+.xuv{
+    background-color: rgb(206, 206, 206);
+    color: #000;
+}
+
+/* Cars Section Ends */
+
+
 /* Footer */
 
 .footer-links{

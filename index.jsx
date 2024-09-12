@@ -7,7 +7,7 @@ import Layout from './pages/components/Layout.jsx'
 import Cars from './pages/Cars.jsx'
 import About from './pages/About.jsx'
 
-
+import './server'; 
 
 
 ReactDom.createRoot(document.getElementById('root')).render(
