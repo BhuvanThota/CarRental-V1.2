@@ -618,6 +618,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -635,6 +640,10 @@ video {
 }
 
 .mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-\[1rem\] {
   margin-top: 1rem;
 }
 
@@ -657,6 +666,14 @@ video {
 
 .w-\[90\%\] {
   width: 90%;
+}
+
+.max-w-\[80\%\] {
+  max-width: 80%;
+}
+
+.max-w-\[90\%\] {
+  max-width: 90%;
 }
 
 .max-w-lg {
@@ -766,6 +783,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -854,6 +876,10 @@ video {
   font-weight: 700;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -897,6 +923,10 @@ video {
   color: rgb(228 228 231 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .hover\:bg-\[\#000000ba\]:hover {
   background-color: #000000ba;
 }
@@ -909,6 +939,15 @@ video {
   font-weight: 700;
 }
 
+.hover\:text-sky-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(2 132 199 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
@@ -916,6 +955,10 @@ video {
 
   .md\:max-w-5xl {
     max-width: 64rem;
+  }
+
+  .md\:max-w-\[70\%\] {
+    max-width: 70%;
   }
 
   .md\:max-w-lg {

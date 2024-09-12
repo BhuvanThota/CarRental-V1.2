@@ -44,8 +44,8 @@ body{
 
 .right-navbar li{
     display: inline-flex;
-    margin-right: 1rem;
-    font-size: large;
+    margin-right: 2rem;
+    font-size: larger;
     font-weight: 600;
 }
 
@@ -162,7 +162,17 @@ main{
 
 .cars-container{
     width: 90%;
-    margin: 5rem auto;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.cardetail-back{
+    width: 90%;
+    margin: 5rem auto 1rem;
+}
+.cardetail-container{
+    width: 80%;
+    margin: 3rem auto 1rem;    
 }
 
 .car-img{
@@ -184,8 +194,8 @@ main{
 }
 
 .luxury{
-    background-color: rgb(255, 149, 0);
-    color:rgb(43, 42, 42);
+    background-color: rgb(1, 174, 169);
+    color:rgb(251, 251, 251);
 }
 
 .convertible{
@@ -194,8 +204,12 @@ main{
 }
 
 .xuv{
-    background-color: rgb(206, 206, 206);
-    color: #000;
+    background-color: rgb(91, 0, 248);
+    color: #fafafa;
+}
+
+.hybrid{
+    background-color: darkgreen;
 }
 
 /* Cars Section Ends */
