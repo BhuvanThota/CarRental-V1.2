@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDom from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import ScrollToTop from './pages/components/ScrollToTop.jsx'
+
 import Home from './pages/Home.jsx'
 import Layout from './pages/components/Layout.jsx'
 import About from './pages/About.jsx'
@@ -19,6 +21,7 @@ import './server';
 
 ReactDom.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<Layout />}  >
         <Route index element = {<Home />} />

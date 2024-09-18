@@ -17,7 +17,25 @@
     font-weight: 600;
 }
 
+.host-navbar ul li a{
+    display: flex;
+    align-items: center;
+}
+.host-navbar ul li a svg{
+    margin-right: 0.35rem;
+}
+
 .host-navbar a:hover, .host-navbar a:active{
     color: #da5700;
     text-decoration: underline;
 }
+
+.income-navbar a:hover, .income-navbar a:active{
+    color: green;
+}
+
+.reviews-navbar a:hover, .reviews-navbar a:active{
+    color: rgb(4, 159, 255)
+}
+
+
