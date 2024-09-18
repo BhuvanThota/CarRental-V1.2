@@ -1,5 +1,11 @@
 import React from 'react'
 
-export default function Reviews(){
-    pass
+function Reviews(){
+    return (
+    <>
+        <h1>This is Host Reviews page</h1>
+    </>
+    )
 }
+
+export default Reviews

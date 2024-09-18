@@ -13,6 +13,9 @@ function Header() {
       </Link>
       <nav className='right-navbar'>
         <ul>
+          <li className='page-navbar-host'>
+            <Link to="host"> Host</Link>
+          </li>
           <li>
             <Link to="about"> About</Link>
           </li>

@@ -1,0 +1,23 @@
+
+
+.host{
+    margin: auto;
+    max-width: 95%;
+}
+
+.host-navbar{
+    list-style: none;
+    margin: 5rem auto 1rem;
+}
+
+.host-navbar li{
+    display: inline-flex;
+    margin-right: 2rem;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.host-navbar a:hover, .host-navbar a:active{
+    color: #da5700;
+    text-decoration: underline;
+}

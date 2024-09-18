@@ -54,6 +54,10 @@ body{
     text-decoration: underline;
 }
 
+.page-navbar-host a:hover, .page-navbar-host a:active{
+    color: #da5700;
+}
+
 main{
     margin-top: 3.5rem;
 }

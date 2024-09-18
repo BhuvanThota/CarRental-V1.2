@@ -1,22 +1,31 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
-export default function HostLayout(){
-    <div>
-      
-      <nav className='host-navbar'>
-        <ul>
-            <li>
-                <Link to="/"> Dashboard</Link>
-            </li>
-            <li>
-                <Link to="income"> Income</Link>
-            </li>
-            <li>
-                <Link to="reviews"> Reviews </Link>
-            </li>
-        </ul>
-      </nav>
+import '/pages/styles/host.css'
 
-    </div>
+function HostLayout() {
+    return (
+    <div className='host'>
+        <nav className='host-navbar'>
+            <ul>
+                <li>
+                    <Link to=""> Dashboard</Link>
+                </li>
+                <li>
+                    <Link to="income"> Income </Link>
+                </li>
+                <li>
+                    <Link to="reviews"> Reviews</Link>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <Outlet />
+        </section>
+
+    </div>)
 }
+
+
+export default HostLayout

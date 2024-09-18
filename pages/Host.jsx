@@ -1,5 +1,10 @@
 import React from 'react'
 
-export default function Host(){
-    
+function Host(){
+    return (<>
+        <h1>This is Host Dashboard page</h1>
+    </>
+    )
 }
+
+export default Host
