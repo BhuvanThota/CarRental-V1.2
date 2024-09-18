@@ -18,9 +18,13 @@ ReactDom.createRoot(document.getElementById('root')).render(
         <Route index element = {<Home />} />
         <Route path="about" element={<About />}  /> 
         <Route path="cars" element={<Cars />}  />
-        <Route path="cars/:id" element={<CarDetail />}>
+        <Route path="cars/:id" element={<CarDetail />} />
+        <Route path="host" element={<HostLayout />}>
+          <Route index element={<Host />}/>
+          <Route path="income" element={<Income />}/>
+          <Route path="reviews" element={<Reviews />}/>
 
-          
+
         </Route> 
       </Route> 
     </Routes>
