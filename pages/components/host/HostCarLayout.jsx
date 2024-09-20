@@ -1,34 +1,41 @@
 import React from 'react'
-import {Outlet, NavLink, Link, useParams} from 'react-router-dom'
+import { Outlet, NavLink, Link, useParams } from 'react-router-dom'
 
-function HostCarLayout(){
+export const CarContext = React.createContext();
+
+function HostCarLayout() {
     
     const params = useParams();
 
     const [car, setCar] = React.useState({});
 
-    React.useEffect( () => {
+    React.useEffect(() => {
         const fetchdata = async () => {
-            try{
+            try {
                 const res = await fetch(`/api/cars/${params.id}`);
                 const data = await res.json();
                 setCar(data.cars);
-            } catch (err){
+            } catch (err) {
                 console.error("Error fetching data", err);
             }
         };
         fetchdata();
     }, [params.id]);
-    
+
     const base = {}
-    
+
     const activecolor = {
         color: "#049fff",
         textDecoration: "underline"
     }
 
-    return(
-        <>
+    return (
+        <section className='bg-orange-100 p-[1rem] md:p-[2rem]'>
+
+            <Link to=".." relative='path' >
+
+                <p className='hostcars-back text-lg font-semibold hover:underline hover:text-[#da5700] ' >&larr; Back to your cars  </p>
+            </Link>
             <section className=' flex flex-col md:flex-row md:items-center'>
                 <img className='inline-block rounded-xl my-8 w-[80%] md:w-[450px] ' src={car.imageUrl} alt={car.name} />
                 <div>
@@ -40,26 +47,26 @@ function HostCarLayout(){
             <nav className='hostcar-navbar '>
                 <ul>
                     <li>
-                        <NavLink 
-                            to="" 
+                        <NavLink
+                            to=""
                             end
-                            style={({isActive}) => isActive ? activecolor : base}
+                            style={({ isActive }) => isActive ? activecolor : base}
                         >
                             Details
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
-                        to="pricing"
-                        style={({isActive}) => isActive ? activecolor : base}
+                            to="pricing"
+                            style={({ isActive }) => isActive ? activecolor : base}
                         >
                             Pricing
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
-                        to="photos"
-                        style={({isActive}) => isActive ? activecolor : base}
+                            to="photos"
+                            style={({ isActive }) => isActive ? activecolor : base}
                         >
                             Photos
                         </NavLink>
@@ -68,13 +75,13 @@ function HostCarLayout(){
             </nav>
             <hr />
             <section>
-                <Outlet />
+                <CarContext.Provider value={car}>
+                    <Outlet />
+                </CarContext.Provider>
             </section>
 
-            <Link to="../cars" >
-            <p className='hostcars-back text-lg font-semibold hover:underline hover:text-[#da5700] ' >&larr; Back to your cars  </p>
-            </Link>
-        </>
+
+        </section>
     )
 }
 

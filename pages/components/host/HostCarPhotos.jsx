@@ -1,9 +1,14 @@
 import React from 'react'
+import { CarContext } from './HostCarLayout'
 
 function HostCarPhotos(){
+    const car = React.useContext(CarContext);
+    
     return(
         <>
-        <h1>Host Cars Photos here</h1>
+            <div className='w-[150px] md:w-[250px]'>
+                <img src={car.imageUrl} alt={car.name} />
+            </div>
         </>
     )
 }

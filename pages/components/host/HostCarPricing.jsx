@@ -1,9 +1,11 @@
 import React from 'react'
+import { CarContext } from './HostCarLayout'
 
 function HostCarPricing(){
+    const car = React.useContext(CarContext);
     return(
         <>
-        <h1>Host Cars Pricing here</h1>
+        <h3><strong>Cost per Day: </strong>₹{car.price}</h3>
         </>
     )
 }

@@ -23,7 +23,7 @@ function CarDetail() {
     
     return (
         <>
-            <Link to="/cars">
+            <Link to=".." relative='path'>
             <p className=' cardetail-back px-5 text-lg font-semibold hover:underline hover:text-sky-600 ' >&larr; Back to cars  </p>
             </Link>
             <div className='cardetail-container'>
@@ -37,7 +37,7 @@ function CarDetail() {
             </div>
 
 
-            <Link to="/cars">
+            <Link to=".." relative='path'>
             <p className=' cardetail-back px-5 text-lg font-semibold hover:underline hover:text-sky-600 ' >&larr; Back to cars  </p>
             </Link>
 

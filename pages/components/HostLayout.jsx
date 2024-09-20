@@ -96,7 +96,7 @@ function HostLayout() {
                     </li>
                 </ul>
             </nav>
-            
+            <hr />
             <section>
                 <Outlet />
             </section>
