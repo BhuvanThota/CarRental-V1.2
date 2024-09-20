@@ -4,10 +4,7 @@ import logoimg from "../assets/3d-car.png"
 
 function Header() {
   // Base and active styles for NavLinks
-  const baseStyle = {
-    color: "black",
-    textDecoration: "none",
-  };
+  const baseStyle = { };
 
   const hostActiveStyle = {
     color: "#da5700",

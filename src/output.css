@@ -944,6 +944,11 @@ video {
   font-weight: 700;
 }
 
+.hover\:text-\[\#da5700\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(218 87 0 / var(--tw-text-opacity));
+}
+
 .hover\:text-sky-600:hover {
   --tw-text-opacity: 1;
   color: rgb(2 132 199 / var(--tw-text-opacity));

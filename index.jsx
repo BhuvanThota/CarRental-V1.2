@@ -15,6 +15,11 @@ import Dashboard from './pages/Dashboard.jsx'
 import Income from './pages/Income.jsx'
 import Reviews from './pages/Reviews.jsx'
 
+import HostCars from './pages/HostCars.jsx'
+import HostCarLayout from './pages/components/host/HostCarLayout.jsx'
+import HostCarDetails from './pages/components/host/HostCarDetails.jsx'
+import HostCarPricing from './pages/components/host/HostCarPricing.jsx'
+import HostCarPhotos from './pages/components/host/HostCarPhotos'
 
 import './server'; 
 
@@ -32,8 +37,14 @@ ReactDom.createRoot(document.getElementById('root')).render(
           <Route index element = {<Dashboard />} />
           <Route path="income" element={<Income />} />
           <Route path="reviews" element={<Reviews />} />
+          <Route path="cars" element={<HostCars /> } />
+          <Route path="cars/:id" element={< HostCarLayout/>} >
+            <Route index element={<HostCarDetails />}/>
+            <Route path="pricing" element={<HostCarPricing />} />
+            <Route path="photos" element={<HostCarPhotos />} />
 
 
+          </Route>
         </Route> 
       </Route> 
     </Routes>
