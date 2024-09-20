@@ -33,10 +33,10 @@ function Header() {
         <ul>
           <li className='page-navbar-host'>
             <NavLink
-              to="host"
+              to="admin"
               style={({ isActive }) => (isActive ? hostActiveStyle : baseStyle)}
             >
-              Host
+              Admin
             </NavLink>
           </li>
           <li>

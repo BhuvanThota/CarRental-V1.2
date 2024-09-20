@@ -33,7 +33,7 @@ ReactDom.createRoot(document.getElementById('root')).render(
         <Route path="about" element={<About />}  /> 
         <Route path="cars" element={<Cars />}  />
         <Route path="cars/:id" element={<CarDetail />} />
-        <Route path="host" element={<HostLayout />}>
+        <Route path="admin" element={<HostLayout />}>
           <Route index element = {<Dashboard />} />
           <Route path="income" element={<Income />} />
           <Route path="reviews" element={<Reviews />} />

@@ -48,7 +48,7 @@ function HostCarLayout() {
                 <ul>
                     <li>
                         <NavLink
-                            to=""
+                            to="."
                             end
                             style={({ isActive }) => isActive ? activecolor : base}
                         >
