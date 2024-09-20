@@ -34,7 +34,7 @@ function HostCarLayout(){
                 <div>
                     <i className={`mx-4 px-4 rounded-xl  py-2 ${car.type} text-slate-200 font-semibold capitalize `}>{car.type}</i>
                     <h3 className="mt-4 px-4 font-bold text-2xl lg:text-3xl">{car.name}</h3>
-                    <p className="px-4 md:text-lg lg:text-xl">₹{car.price}/day</p>
+                    <p className="mt-2 px-4 md:text-lg lg:text-xl">₹{car.price}/day</p>
                 </div>
             </section>
             <nav className='hostcar-navbar '>
