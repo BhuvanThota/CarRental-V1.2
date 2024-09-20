@@ -49,7 +49,7 @@ body{
     font-weight: 600;
 }
 
-.right-navbar a:hover, .right-navbar a:active{
+.right-navbar a:hover{
     color: #008DDA;
     text-decoration: underline;
 }

@@ -11,7 +11,7 @@ import Cars from './pages/Cars.jsx'
 import CarDetail from './pages/CarDetail.jsx'
 
 import HostLayout from './pages/components/HostLayout.jsx'
-import Host from './pages/Host.jsx'
+import Dashboard from './pages/Dashboard.jsx'
 import Income from './pages/Income.jsx'
 import Reviews from './pages/Reviews.jsx'
 
@@ -29,7 +29,7 @@ ReactDom.createRoot(document.getElementById('root')).render(
         <Route path="cars" element={<Cars />}  />
         <Route path="cars/:id" element={<CarDetail />} />
         <Route path="host" element={<HostLayout />}>
-          <Route index element = {<Host />} />
+          <Route index element = {<Dashboard />} />
           <Route path="income" element={<Income />} />
           <Route path="reviews" element={<Reviews />} />
 
