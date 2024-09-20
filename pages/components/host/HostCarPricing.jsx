@@ -1,8 +1,8 @@
 import React from 'react'
-import { CarContext } from './HostCarLayout'
+import { useOutletContext } from 'react-router-dom';
 
 function HostCarPricing(){
-    const car = React.useContext(CarContext);
+    const car = useOutletContext();
     return(
         <>
         <h3><strong>Cost per Day: </strong>₹{car.price}</h3>

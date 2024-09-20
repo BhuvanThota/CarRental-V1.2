@@ -1,7 +1,6 @@
 import React from 'react'
 import { Outlet, NavLink, Link, useParams } from 'react-router-dom'
 
-export const CarContext = React.createContext();
 
 function HostCarLayout() {
     
@@ -75,9 +74,7 @@ function HostCarLayout() {
             </nav>
             <hr />
             <section>
-                <CarContext.Provider value={car}>
-                    <Outlet />
-                </CarContext.Provider>
+                <Outlet context={car} />
             </section>
 
 

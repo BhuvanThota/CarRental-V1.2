@@ -1,9 +1,8 @@
 import React from 'react'
-import { CarContext } from './HostCarLayout'
-
+import { useOutletContext } from 'react-router-dom';
 
 function HostCarDetails(){
-    const car = React.useContext(CarContext);
+    const car = useOutletContext();
     return(
         <>
             <div className='flex flex-col gap-[1rem]'>

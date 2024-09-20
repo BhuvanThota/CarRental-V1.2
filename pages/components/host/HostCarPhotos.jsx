@@ -1,9 +1,9 @@
 import React from 'react'
-import { CarContext } from './HostCarLayout'
+import { useOutletContext } from 'react-router-dom';
 
 function HostCarPhotos(){
-    const car = React.useContext(CarContext);
-    
+    const car = useOutletContext();
+
     return(
         <>
             <div className='w-[150px] md:w-[250px]'>
