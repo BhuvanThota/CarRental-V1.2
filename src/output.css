@@ -669,6 +669,10 @@ video {
   height: 1.5rem;
 }
 
+.w-\[320px\] {
+  width: 320px;
+}
+
 .w-\[90\%\] {
   width: 90%;
 }
@@ -985,6 +989,10 @@ video {
 
   .md\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .md\:items-center {
+    align-items: center;
   }
 
   .md\:gap-32 {

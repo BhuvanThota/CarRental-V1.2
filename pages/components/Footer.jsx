@@ -8,7 +8,7 @@ function Footer() {
     return (
         <footer >
             <hr />
-            <section className='container flex flex-col gap-8 md:flex-row justify-between md:gap-32'>
+            <section className='footer-container flex flex-col gap-8 md:flex-row justify-between md:gap-32'>
                 <div className='footer-links text-left flex flex-col gap-4 '>
                     <Link to="/">
                         <button className='text-3xl font-bold flex gap-2 justify-center items-center  '>

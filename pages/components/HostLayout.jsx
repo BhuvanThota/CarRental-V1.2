@@ -28,6 +28,7 @@ function HostLayout() {
     return (
         <div className='host'>
             <nav className='host-navbar'>
+                <hr />
                 <ul>
                     <li>
                         <NavLink
@@ -95,7 +96,7 @@ function HostLayout() {
                     </li>
                 </ul>
             </nav>
-
+            
             <section>
                 <Outlet />
             </section>

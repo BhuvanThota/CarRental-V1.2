@@ -25,13 +25,13 @@ function HostCars() {
 
     return (
         <>
-            <h1 className='cars-container text-4xl font-extrabold'>Your Listed Cars:</h1>
+            <h1 className='hostcars-container text-4xl font-extrabold'>Your Listed Cars:</h1>
             {cars.length > 0 && (
-                <section className="cars-container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 gap-x-4">
+                <section className="hostcars-container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 gap-x-4">
                     {carelements}
                 </section>
             )}
-            {cars.length === 0 && <p className="cars-container p-[3rem] text-center text-2xl font-bold">Loading cars...</p>}
+            {cars.length === 0 && <p className="hostcars-container p-[3rem] text-center text-2xl font-bold">Loading cars...</p>}
         </>
     )
 }

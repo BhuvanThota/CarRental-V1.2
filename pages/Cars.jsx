@@ -27,7 +27,7 @@ function Cars() {
 
   return (
     <>
-    <h1 className='cars-container text-4xl font-extrabold'>Explore our car options</h1>
+    <h1 className='cars-container  text-4xl font-extrabold'>Explore our car options</h1>
     {cars.length > 0 && ( 
       <section className="cars-container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 gap-x-4">
         {carelements}

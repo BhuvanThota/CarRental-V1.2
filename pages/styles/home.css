@@ -8,6 +8,18 @@ body{
     font-family: Helvetica, Tahoma, Verdana, Arial, sans-serif
 }
 
+hr{
+    margin: 1rem auto;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));    
+}
+
+
+
+hr.style-two {
+}
+
 
 
 /* Nav Bar  */
@@ -216,10 +228,21 @@ main{
     background-color: darkgreen;
 }
 
+@media (max-width: 750px){
+    .cars-container {
+        margin-top:2rem;
+    }
+}
+
 /* Cars Section Ends */
 
 
 /* Footer */
+
+.footer-container{
+    max-width: 90%;
+    margin: 1rem auto;
+}
 
 .footer-links{
     max-width: 90%;
