@@ -669,8 +669,8 @@ video {
   height: 1.5rem;
 }
 
-.w-\[320px\] {
-  width: 320px;
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .w-\[90\%\] {
@@ -965,6 +965,10 @@ video {
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
+  }
+
+  .md\:w-\[450px\] {
+    width: 450px;
   }
 
   .md\:max-w-5xl {

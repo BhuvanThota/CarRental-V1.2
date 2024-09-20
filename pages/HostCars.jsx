@@ -13,7 +13,7 @@ function HostCars() {
     const carelements = cars.map((car) => (
         <Link key={car.id} to={`${car.id}`}>
             <div className=" car-item  rounded-xl p-2">
-                <img className=" w-[90%]  inline-block rounded-xl" src={car.imageUrl} alt={car.name} />
+                <img className=" w-[90%] inline-block rounded-xl" src={car.imageUrl} alt={car.name} />
                 <div className='my-4 flex flex-col gap-2'>
                     <h3 className="px-4 text-xl font-bold md:text-2xl lg:text-3xl">{car.name}</h3>
                     <p className="px-4 md:text-lg lg:text-xl">₹{car.price}/day</p>

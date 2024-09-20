@@ -30,7 +30,7 @@ function HostCarLayout(){
     return(
         <>
             <section className=' flex flex-col md:flex-row md:items-center'>
-                <img className='inline-block rounded-xl my-8 w-[320px] ' src={car.imageUrl} alt={car.name} />
+                <img className='inline-block rounded-xl my-8 w-[80%] md:w-[450px] ' src={car.imageUrl} alt={car.name} />
                 <div>
                     <i className={`mx-4 px-4 rounded-xl  py-2 ${car.type} text-slate-200 font-semibold capitalize `}>{car.type}</i>
                     <h3 className="mt-4 px-4 font-bold text-2xl lg:text-3xl">{car.name}</h3>
