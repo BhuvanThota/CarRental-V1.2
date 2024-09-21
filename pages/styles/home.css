@@ -220,6 +220,11 @@ main{
 }
 
 .hybrid{
+    background-color: rgba(76, 1, 116, 0.973);
+    color: #fafafa;
+}
+
+.electric{
     background-color: darkgreen;
 }
 

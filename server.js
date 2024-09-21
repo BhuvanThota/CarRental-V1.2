@@ -13,11 +13,11 @@ createServer({
         server.create("car", { id: "3", name: "Luxury Cruiser", price: 10000,       description: "Experience unparalleled comfort and style with this luxurious sedan. Enjoy a smooth ride, top-of-the-line amenities, and advanced technology features that elevate every journey.",
             imageUrl: "https://images.pexels.com/photos/16365199/pexels-photo-16365199/free-photo-of-silver-land-rover-defender.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", type: "luxury suv", hostId:"96" })
         server.create("car", { id: "4", name: "Open-Air Explorer", price: 8500,       description: "Unleash your adventurous spirit with this convertible. With the top down, feel the wind in your hair and immerse yourself in the beauty of the open road.",
-            imageUrl: "https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", type: "convertible", hostId:"96" })
+            imageUrl: "https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", type: "luxury convertible", hostId:"96" })
         server.create("car", { id: "5", name: "Spacious Sprinter", price: 11000,       description: "This spacious van provides ultimate flexibility for both passenger and cargo needs. Its configurable seating allows you to customize the interior for maximum comfort and convenience during your travels.",
-            imageUrl: "https://images.pexels.com/photos/15116059/pexels-photo-15116059/free-photo-of-parked-hyundai-palisade.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", type: "xuv", hostId:"123" })
-        server.create("car", { id: "6", name:"Electric Hybrid", price: 7000,       description: "Drive with a clear conscience with this fuel-efficient hybrid. Its innovative technology combines electric power with a gasoline engine for a smooth, eco-friendly driving experience.",
-            imageUrl: "https://images.pexels.com/photos/26921632/pexels-photo-26921632/free-photo-of-side-view-of-a-white-station-wagon.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", type: "hybrid suv", hostId:"123" })
+            imageUrl: "https://images.pexels.com/photos/15116059/pexels-photo-15116059/free-photo-of-parked-hyundai-palisade.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", type: "hybrid suv", hostId:"123" })
+        server.create("car", { id: "6", name:"Silent Crusier", price: 7000,       description: "Drive with a clear conscience with this fuel-efficient hybrid. Its innovative technology combines electric power with a gasoline engine for a smooth, eco-friendly driving experience.",
+            imageUrl: "https://images.pexels.com/photos/26921632/pexels-photo-26921632/free-photo-of-side-view-of-a-white-station-wagon.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", type: "electric suv", hostId:"123" })
     },
 
     routes() {

@@ -1,18 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 
 function Cars() {
   const [cars, setCars] = React.useState([]);
+  const [filteredCars, setFilteredCars] = React.useState([]);
+
+  let [searchParams, setSearchParams] = useSearchParams();
+  const typefilter = searchParams.get("type");
 
   React.useEffect(() => {
     fetch("/api/cars")
         .then(res => res.json())
         .then(data => setCars(data.cars));
+        
   }, []);
 
+  React.useEffect(() => {
+    if(typefilter){
+      setFilteredCars(cars.filter((car) => car.type.includes(typefilter) ));
+    }else{
+      setFilteredCars(cars);
+    }
+  }, [searchParams,cars]);
   
 
-  const carelements = cars.map((car) => (
+  const carelements = filteredCars.map((car) => (
     <Link key={car.id} to={`${car.id}`}> 
       <div  className=" car-item  rounded-xl p-2">
           <img className=" w-[90%]  inline-block rounded-xl" src={car.imageUrl} alt={car.name} />
@@ -26,6 +38,7 @@ function Cars() {
   ));
 
   return (
+
     <>
     <h1 className='cars-container  text-4xl font-extrabold'>Explore our car options</h1>
     {cars.length > 0 && ( 
