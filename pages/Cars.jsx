@@ -41,6 +41,28 @@ function Cars() {
 
     <>
     <h1 className='cars-container  text-4xl font-extrabold'>Explore our car options</h1>
+    <div>
+      <hr />
+      <div className='w-[90%] mx-auto mt-[1rem] flex gap-[1rem] items-center flex-wrap'>
+        <h4 className='text-xl'>Filter:</h4>
+        <button className='py-[4px] px-[10px] rounded-xl text-cyan-50 bg-[#13276b] hover:bg-[#2143b4ac]' 
+              onClick={() => setSearchParams({type: "sedan"})}
+        > Sedan</button>
+        <button className='py-[4px] px-[10px] rounded-xl text-cyan-50 bg-[#ff8f06] hover:bg-[#ff8f06a4]'  
+              onClick={() => setSearchParams({type: "suv"})}
+        > SUV</button>
+        <button  className='py-[4px] px-[10px] rounded-xl text-cyan-50 bg-[#01aea9] hover:bg-[#0188ae9d]'  
+              onClick={() => setSearchParams({type: "luxury"})}
+        > Luxury</button>
+        <button className='py-[4px] px-[10px] rounded-xl text-cyan-50 bg-[#006400] hover:bg-[#2e922dc1]'  
+              onClick={() => setSearchParams({type: "electric"})}
+        > Electric</button>
+        <button  className='py-[4px] px-[10px] rounded-xl hover:bg-[#c5c5c589] hover:underline'  
+            onClick={() => setSearchParams({})}
+        > Reset</button>
+      </div>
+    </div>
+    <hr />
     {cars.length > 0 && ( 
       <section className="cars-container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 gap-x-4">
         {carelements}

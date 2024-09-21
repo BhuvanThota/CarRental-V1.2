@@ -171,6 +171,7 @@ main{
 
 /* Cars Section */
 
+
 .cars-container{
     width: 90%;
     margin: auto;
@@ -201,11 +202,11 @@ main{
 }
 
 .suv{
-    background-color: rgb(255, 143, 6);
+    background-color: #ff8f06;
 }
 
 .luxury{
-    background-color: rgb(1, 174, 169);
+    background-color: #01aea9;
     color:rgb(251, 251, 251);
 }
 
@@ -225,7 +226,7 @@ main{
 }
 
 .electric{
-    background-color: darkgreen;
+    background-color: #006400;
 }
 
 @media (max-width: 750px){
