@@ -9,6 +9,7 @@ import Layout from './pages/components/Layout.jsx'
 import About from './pages/About.jsx'
 import Cars from './pages/Cars.jsx'
 import CarDetail from './pages/CarDetail.jsx'
+import PageNotFound from './pages/PageNotFound.jsx'
 
 import HostLayout from './pages/components/HostLayout.jsx'
 import Dashboard from './pages/Dashboard.jsx'
@@ -45,7 +46,8 @@ ReactDom.createRoot(document.getElementById('root')).render(
 
 
           </Route>
-        </Route> 
+        </Route>
+        <Route path="*" element={<PageNotFound/>}/>
       </Route> 
     </Routes>
   </BrowserRouter>

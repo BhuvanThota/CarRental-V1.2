@@ -1,11 +1,13 @@
 import React from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useLocation } from 'react-router-dom'
 
 function CarDetail() {
-
+    const location = useLocation();
     const params = useParams();
 
     const [car, setCar] = React.useState({});
+
+    const type = location.state?.type || "all"
 
     React.useEffect( () => {
         const fetchdata = async () => {
@@ -23,8 +25,8 @@ function CarDetail() {
     
     return (
         <>
-            <Link to=".." relative='path'>
-            <p className=' cardetail-back px-5 text-lg font-semibold hover:underline hover:text-sky-600 ' >&larr; Back to cars  </p>
+            <Link to= {`..?${location.state.sp}`} relative='path'>
+            <p className=' cardetail-back px-5 text-lg font-semibold hover:underline hover:text-sky-600 ' >&larr; Back to {type} cars  </p>
             </Link>
             <div className='cardetail-container'>
                 <h1 className=' text-3xl font-extrabold capitalize md:text-4xl underline'> Car: {car.name} </h1>
@@ -37,8 +39,8 @@ function CarDetail() {
             </div>
 
 
-            <Link to=".." relative='path'>
-            <p className=' cardetail-back px-5 text-lg font-semibold hover:underline hover:text-sky-600 ' >&larr; Back to cars  </p>
+            <Link to={`..?${location.state.sp}`} relative='path'>
+            <p className=' cardetail-back px-5 text-lg font-semibold hover:underline hover:text-sky-600 ' >&larr; Back to {type} cars  </p>
             </Link>
 
         </>

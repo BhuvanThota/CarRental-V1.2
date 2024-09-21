@@ -9,6 +9,7 @@ function About() {
 
     return (
         <main>
+            
             <section  >
                 <div className='head-img' ></div>
                 <div className="head-text text-center md:text-left text-wrap  my-0 mx-auto max-w-lg lg:max-w-3xl pt-16">

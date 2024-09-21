@@ -11,7 +11,7 @@ function HostCars() {
     }, [])
 
     const carelements = cars.map((car) => (
-        <Link key={car.id} to={`${car.id}`}>
+        <Link key={car.id} to={car.id}>
             <div className=" car-item  rounded-xl p-2">
                 <img className=" w-[90%] inline-block rounded-xl" src={car.imageUrl} alt={car.name} />
                 <div className='my-4 flex flex-col gap-2'>

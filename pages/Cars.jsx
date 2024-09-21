@@ -5,7 +5,7 @@ function Cars() {
   const [cars, setCars] = React.useState([]);
   const [filteredCars, setFilteredCars] = React.useState([]);
 
-  let [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const typefilter = searchParams.get("type");
 
   React.useEffect(() => {
@@ -25,7 +25,7 @@ function Cars() {
   
 
   const carelements = filteredCars.map((car) => (
-    <Link key={car.id} to={`${car.id}`}> 
+    <Link key={car.id} to={car.id} state={{ sp: searchParams.toString(), type: typefilter}}> 
       <div  className=" car-item  rounded-xl p-2">
           <img className=" w-[90%]  inline-block rounded-xl" src={car.imageUrl} alt={car.name} />
         <div className='my-4 flex flex-col gap-2'> 
@@ -57,9 +57,10 @@ function Cars() {
         <button className='py-[4px] px-[10px] rounded-xl text-cyan-50 bg-[#006400] hover:bg-[#2e922dc1]'  
               onClick={() => setSearchParams({type: "electric"})}
         > Electric</button>
+        {typefilter && 
         <button  className='py-[4px] px-[10px] rounded-xl hover:bg-[#c5c5c589] hover:underline'  
             onClick={() => setSearchParams({})}
-        > Reset</button>
+        > Reset</button>}
       </div>
     </div>
     <hr />
