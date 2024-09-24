@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
+import {getCars} from '../api.js'
 
 function Cars() {
   const [cars, setCars] = React.useState([]);
@@ -9,10 +10,11 @@ function Cars() {
   const typefilter = searchParams.get("type");
 
   React.useEffect(() => {
-    fetch("/api/cars")
-        .then(res => res.json())
-        .then(data => setCars(data.cars));
-        
+    async function loadCars(){
+      const carsData = await getCars();
+      setCars(carsData);
+    }
+    loadCars();
   }, []);
 
   React.useEffect(() => {
